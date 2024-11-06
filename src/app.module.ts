@@ -5,6 +5,10 @@ import * as dotenv from 'dotenv';
 import { TypeOrmModule, TypeOrmModuleAsyncOptions } from '@nestjs/typeorm';
 import { ConfigEnum } from './enum/config.enum';
 import * as Joi from 'joi';
+import { Users } from './user/entity/user.entity';
+import { Profiles } from './user/entity/profile.entity';
+import { Roles } from './roles/roles.entity';
+import { Logs } from './logs/logs.entity';
 
 const envFilePath = `.env.${process.env.NODE_ENV || `development`}`;
 
@@ -38,7 +42,7 @@ const envFilePath = `.env.${process.env.NODE_ENV || `development`}`;
           username: configService.get(ConfigEnum.DB_USERNAME),
           password: configService.get(ConfigEnum.DB_PASSWORD),
           database: configService.get(ConfigEnum.DB_DATABASE),
-          entities: [],
+          entities: [Users, Profiles, Roles, Logs],
           synchronize: configService.get(ConfigEnum.DB_SYNC), // 同步本地的 schema 与数据库,初始化的时候去使用
           logging: ['error'],
         }) as TypeOrmModuleAsyncOptions,
