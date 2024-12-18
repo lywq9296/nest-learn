@@ -4,6 +4,8 @@ import { AppService } from './app.service';
 import { ConfigModule } from '@nestjs/config';
 import { UserModule } from './user/user.module';
 import * as dotenv from 'dotenv';
+import * as Joi from 'joi';
+import { ConfigEnum } from './enum/config.enum';
 
 const envFilePath = `.env.${process.env.NODE_ENV}` || '.env';
 
@@ -16,6 +18,11 @@ const envFilePath = `.env.${process.env.NODE_ENV}` || '.env';
       ignoreEnvFile: true,
       envFilePath,
       load: [() => dotenv.config({ path: '.env' })],
+      validationSchema: Joi.object({
+        [ConfigEnum.DB_PORT]: Joi.number()
+          .valid(3306, 3307, 3308)
+          .default(3306),
+      }),
     }),
     UserModule,
   ],
