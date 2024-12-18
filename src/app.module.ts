@@ -1,21 +1,10 @@
 import { Module } from '@nestjs/common';
-import { UserModule } from './user/user.module';
-import { ConfigModule } from '@nestjs/config';
-import Configuration from './configuration';
-import * as dotenv from 'dotenv';
-
-// const envFilePath = `.env.${process.env.NODE_ENV || `development`}`;
+import { AppController } from './app.controller';
+import { AppService } from './app.service';
 
 @Module({
-  imports: [
-    ConfigModule.forRoot({
-      isGlobal: true, // ConfigModule 在全局使用
-      // envFilePath,
-      load: [Configuration, () => dotenv.config({ path: '.env' })],
-    }),
-    UserModule,
-  ],
-  controllers: [],
-  providers: [],
+  imports: [],
+  controllers: [AppController],
+  providers: [AppService],
 })
 export class AppModule {}
