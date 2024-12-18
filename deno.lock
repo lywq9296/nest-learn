@@ -15,6 +15,8 @@
     "npm:@types/supertest@^2.0.12": "2.0.16",
     "npm:@typescript-eslint/eslint-plugin@6": "6.21.0_@typescript-eslint+parser@6.21.0__eslint@8.57.1__typescript@5.7.2_eslint@8.57.1_typescript@5.7.2",
     "npm:@typescript-eslint/parser@6": "6.21.0_eslint@8.57.1_typescript@5.7.2",
+    "npm:cross-env@^7.0.3": "7.0.3",
+    "npm:dotenv@^16.4.7": "16.4.7",
     "npm:eslint-config-prettier@9": "9.1.0_eslint@8.57.1",
     "npm:eslint-plugin-prettier@5": "5.2.1_eslint@8.57.1_eslint-config-prettier@9.1.0__eslint@8.57.1_prettier@3.4.2",
     "npm:eslint@^8.42.0": "8.57.1",
@@ -659,7 +661,7 @@
       "integrity": "sha512-pdGTp8m9d0ZCrjTpjkUbZx6gyf2IKf+7zlkrPNMsJzYZ4bFRRTpXrnj+556/5uiI6AfL5mMrJc2u7dB6bvM+VA==",
       "dependencies": [
         "@nestjs/common",
-        "dotenv",
+        "dotenv@16.4.5",
         "dotenv-expand",
         "lodash",
         "rxjs"
@@ -1741,6 +1743,12 @@
     "create-require@1.1.1": {
       "integrity": "sha512-dcKFX3jn0MpIaXjisoRvexIJVEKzaq7z2rZKxf+MSr9TkdmHmsU4m2lcLojrj/FHl8mk5VxMmYA+ftRkP/3oKQ=="
     },
+    "cross-env@7.0.3": {
+      "integrity": "sha512-+/HKd6EgcQCJGh2PSjZuUitQBQynKor4wrFbRg4DtAgS1aWO+gU52xpH7M9ScGgXSYmAVS9bIJ8EzuaGw0oNAw==",
+      "dependencies": [
+        "cross-spawn"
+      ]
+    },
     "cross-spawn@7.0.6": {
       "integrity": "sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==",
       "dependencies": [
@@ -1826,6 +1834,9 @@
     },
     "dotenv@16.4.5": {
       "integrity": "sha512-ZmdL2rui+eB2YwhsWzjInR8LldtZHGDoQ1ugH85ppHKwpUHL7j7rN0Ti9NCnGiQbhaZ11FpR+7ao1dNsmduNUg=="
+    },
+    "dotenv@16.4.7": {
+      "integrity": "sha512-47qPchRCykZC03FhkYAhrvwU4xDBFIj1QPqaarj6mdM/hgUzfPHcpkHJOn3mJAufFeeAxAzeGsr5X0M4k6fLZQ=="
     },
     "dunder-proto@1.0.1": {
       "integrity": "sha512-KIN/nDJBQRcXw0MLVhZE9iQHmG68qAVIBg9CqmUYjmQIhgij9U5MFvrqkUL5FbtyyzZuOeOt0zdeRe4UY7ct+A==",
@@ -4202,6 +4213,8 @@
         "npm:@types/supertest@^2.0.12",
         "npm:@typescript-eslint/eslint-plugin@6",
         "npm:@typescript-eslint/parser@6",
+        "npm:cross-env@^7.0.3",
+        "npm:dotenv@^16.4.7",
         "npm:eslint-config-prettier@9",
         "npm:eslint-plugin-prettier@5",
         "npm:eslint@^8.42.0",
