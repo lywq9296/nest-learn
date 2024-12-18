@@ -13,10 +13,13 @@
     "npm:@types/supertest@^2.0.12": "2.0.16",
     "npm:@typescript-eslint/eslint-plugin@6": "6.21.0_@typescript-eslint+parser@6.21.0__eslint@8.57.1__typescript@5.7.2_eslint@8.57.1_typescript@5.7.2",
     "npm:@typescript-eslint/parser@6": "6.21.0_eslint@8.57.1_typescript@5.7.2",
+    "npm:config@^3.3.12": "3.3.12",
+    "npm:cross-env@^7.0.3": "7.0.3",
     "npm:eslint-config-prettier@9": "9.1.0_eslint@8.57.1",
     "npm:eslint-plugin-prettier@5": "5.2.1_eslint@8.57.1_eslint-config-prettier@9.1.0__eslint@8.57.1_prettier@3.4.2",
     "npm:eslint@^8.42.0": "8.57.1",
     "npm:jest@^29.5.0": "29.7.0_ts-node@10.9.2__@types+node@22.5.4__typescript@5.7.2_typescript@5.7.2",
+    "npm:js-yaml@^4.1.0": "4.1.0",
     "npm:prettier@3": "3.4.2",
     "npm:reflect-metadata@~0.1.13": "0.1.14",
     "npm:rxjs@^7.8.1": "7.8.1",
@@ -1663,6 +1666,12 @@
         "typedarray"
       ]
     },
+    "config@3.3.12": {
+      "integrity": "sha512-Vmx389R/QVM3foxqBzXO8t2tUikYZP64Q6vQxGrsMpREeJc/aWRnPRERXWsYzOHAumx/AOoILWe6nU3ZJL+6Sw==",
+      "dependencies": [
+        "json5"
+      ]
+    },
     "consola@2.15.3": {
       "integrity": "sha512-9vAdYbHj6x2fLKC4+oPH0kFzY/orMZyG2Aj+kNylHxKGJ/Ed4dpNyAQYwJOdqO4zdM7XpVHmyejQDcQHrnuXbw=="
     },
@@ -1721,6 +1730,12 @@
     },
     "create-require@1.1.1": {
       "integrity": "sha512-dcKFX3jn0MpIaXjisoRvexIJVEKzaq7z2rZKxf+MSr9TkdmHmsU4m2lcLojrj/FHl8mk5VxMmYA+ftRkP/3oKQ=="
+    },
+    "cross-env@7.0.3": {
+      "integrity": "sha512-+/HKd6EgcQCJGh2PSjZuUitQBQynKor4wrFbRg4DtAgS1aWO+gU52xpH7M9ScGgXSYmAVS9bIJ8EzuaGw0oNAw==",
+      "dependencies": [
+        "cross-spawn"
+      ]
     },
     "cross-spawn@7.0.6": {
       "integrity": "sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==",
@@ -4175,10 +4190,13 @@
         "npm:@types/supertest@^2.0.12",
         "npm:@typescript-eslint/eslint-plugin@6",
         "npm:@typescript-eslint/parser@6",
+        "npm:config@^3.3.12",
+        "npm:cross-env@^7.0.3",
         "npm:eslint-config-prettier@9",
         "npm:eslint-plugin-prettier@5",
         "npm:eslint@^8.42.0",
         "npm:jest@^29.5.0",
+        "npm:js-yaml@^4.1.0",
         "npm:prettier@3",
         "npm:reflect-metadata@~0.1.13",
         "npm:rxjs@^7.8.1",
