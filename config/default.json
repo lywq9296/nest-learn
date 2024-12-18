@@ -1,0 +1,9 @@
+{
+	"token_secret":"long-secret",
+	"db":{
+		"host":"localhost",
+		"post":"5432",
+		"username":"lywq",
+		"password":"example"
+	}
+}
